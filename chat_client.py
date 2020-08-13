@@ -34,7 +34,6 @@ stream1 = pa.open(rate=RATE, channels=CHANNELS, format=FORMAT, input=True,
                  input_device_index=I_DEVICE_INDEX,
                  frames_per_buffer=CHUNK, start=False, stream_callback=callback)
 
-
 # 소켓 설정
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s1:
