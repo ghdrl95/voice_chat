@@ -16,7 +16,6 @@ pa = pyaudio.PyAudio()
 def callback(in_data, frame_count, time_info, status):
     global s1
     s1.sendall(in_data)  # buffer size
-
     return (None, pyaudio.paContinue)
 
 def speaker_thread():
